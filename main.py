@@ -7,8 +7,9 @@ app = FastAPI()
 def get_info():
     return {
         "email": "Olatunjibalogun025@gmail.com",  
-        "current_datetime": "2025-01-30T07:28:44.142671Z",
+        "current_datetime": datetime.utcnow().isoformat() + "Z",  
         "github_url": "https://github.com/Teejee001/api-server" 
     }
+
 
 
