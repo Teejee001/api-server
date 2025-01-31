@@ -14,7 +14,7 @@ def get_info():
     }
 
 if _name_ == "_main_":
-    port = int(os.getenv("PORT", 8080))
+    port = int(os.getenv("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
 
 
